@@ -1,4 +1,4 @@
-// Must have a POSTMAN acct to use this file
+// Must have a POSTMAN acct to run this job
 
 require(`dotenv`).config()
 const axios = require(`axios`)
@@ -54,7 +54,7 @@ for (const key in publicRoutes) {
     item.push(folder)
 }
 
-const postCollection = async () => {
+;(postCollection = async () => {
     let res = await axios({
         method: `put`,
         url: `https://api.getpostman.com/collections/2523884-f63bcdd7-8499-4774-9689-d6d809552312`,
@@ -75,5 +75,4 @@ const postCollection = async () => {
     })
 
     console.log(res.status == 200 ? `Postman Save Success` : `Fail`)
-}
-postCollection()
+})()
