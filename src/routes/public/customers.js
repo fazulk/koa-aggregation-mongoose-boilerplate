@@ -4,9 +4,10 @@ const CUSTOMER_CONTROLLER = require(`../../controllers/customer.controller`)
 
 const routes = [
     {
-        method: `get`,
+        method: `post`,
         path: `/customer`,
-        handler: CUSTOMER_CONTROLLER.getCustomer
+        handler: CUSTOMER_CONTROLLER.getCustomer,
+        meta: { postman: { body: { name: `Bob Dobalinaz` } } }
     },
     {
         method: `get`,
