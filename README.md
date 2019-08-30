@@ -1,4 +1,4 @@
 # koa-aggregation-mongoose-boilerplate
- WIP building out KOA with Aggregation examples
+ 100% WIP
  
  Was recently introduced to KOA and all its glory. Figured it'd be time to throw something together with pipelines.
